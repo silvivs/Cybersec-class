@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # Servidor Web com PHP e Apache
+  web-server:
+    image: php:7.4-Apache
+    container_name: yaripo_web
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+    networks:
+      - yaripo_net
+
+  # Banco de Dados MySQL
+  database:
+    image: mysql:5.7
+    container_name: yaripo_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: yaripo_corp
+    networks:
+      - yaripo_net
+
+networks:
+  yaripo_net:
+    driver: brigde
