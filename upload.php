@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <h1>YARIPO TALENT ACQUISITION</h1>
     <div class="upload-area">
-        <p>Envie seu currículo para análise (Apenas PDF/DOCX)</p>
+        <p>Send your resume for review (PDF/DOCX only)</p>
         <form method="POST" enctype="multipart/form-data">
             <input type="file" name="cv">
             <input type="submit" value="Submit">
