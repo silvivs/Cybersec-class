@@ -9,6 +9,8 @@ services:
       - "80:80"
     volumes:
       - ./web:/var/www/html
+    entrypoint: >
+      sh -c "docker-php-ext-install mysqli && apache2-foreground"
     networks:
       - yaripo_net
 
