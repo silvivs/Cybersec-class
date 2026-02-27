@@ -19,14 +19,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Arasaka Careers</title>
+    <title>Yaripo Careers</title>
     <style>
         body { background: #000; color: #ff0000; font-family: 'Courier New'; text-align: center; }
         .upload-area { border: 2px dashed #ff0000; padding: 30px; margin: 50px auto; width: 50%; }
     </style>
 </head>
 <body>
-    <h1>ARASAKA TALENT ACQUISITION</h1>
+    <h1>YARIPO TALENT ACQUISITION</h1>
     <div class="upload-area">
         <p>Envie seu currículo para análise (Apenas PDF/DOCX)</p>
         <form method="POST" enctype="multipart/form-data">
