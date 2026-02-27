@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="upload-area">
         <p>Envie seu currículo para análise (Apenas PDF/DOCX)</p>
         <form method="POST" enctype="multipart/form-data">
-            <input type="file" name="Resume">
+            <input type="file" name="cv">
             <input type="submit" value="Submit">
         </form>
     </div>
