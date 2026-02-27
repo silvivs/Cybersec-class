@@ -21,6 +21,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: yaripo_corp
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - yaripo_net
 

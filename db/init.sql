@@ -1,8 +1,12 @@
+-- db/init.sql
+CREATE DATABASE IF NOT EXISTS yaripo_corp;
+USE yaripo_corp;
+
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL,
-    role VARCHAR(20) NOT NULL
+    role VARCHAR(20) DEFAULT 'user'
 );
 
 INSERT INTO users (username, password, role) VALUES 
